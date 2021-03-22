@@ -8,18 +8,14 @@
 </head>
 
 <body>
-    <div class="blue__strip"></div>
-    <div class="container">
-        <header>
-                <div class="header__IMG">
-                    <img src="img/nix_logo_2017.png" alt="IMG">
-                </div>
-        </header>
+
+<?php        include 'php/header.php';    ?> 
+<div class="container">
     <div class="main">
         <div class="subcategory">
-            <a class="subcategory__item" href="#">
+            <a class="subcategory__item" href="Subcategory.php">
                 <div class="item__picture"><img src="img/subcategory/Proc.jpg"></div>
-                <span class="item__text">Процессоры</span>
+                <span class="item__text">1Процессоры</span>
             </a>
 
             <a class="subcategory__item" href="#">
@@ -65,11 +61,7 @@
     </div>
 </div>
 
-<footer>
-    <div class="footer__text">
-        Copyright © 2021. All Rights Reserved
-    </div>
-</footer>
+<?php        include 'php/footer.php';    ?>
 
 </body>
 </html>

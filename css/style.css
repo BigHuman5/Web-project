@@ -1,4 +1,5 @@
 html, body{
+    font-size: 14px;
     min-height: 380px;
     padding: 0;
     margin: 0;
@@ -10,9 +11,14 @@ html, body{
 	-webkit-font-smoothing: antialiased;
 }
 
+p{
+    margin: 0;
+    padding: 0;
+}
+
 .blue__strip{
     width: 100%;
-    height: 58px;
+    height: 68px;
     padding: 0px;
     background-color: rgb(35, 170, 211);
     position: absolute;
@@ -33,18 +39,17 @@ html, body{
 header{
     width: 100%;
     padding: 0px;
+    padding-bottom: 20px;
 }
 
 
 .header__IMG{
     position: relative;
     z-index: 1000;
+    padding-top: 5px;
     text-align: left;
 }
 
-.subcategory{
-    padding-top: 20px;
-}
 .subcategory__item{
     display: inline-block;
     margin: 0 8px 15px auto;
@@ -91,6 +96,71 @@ footer{
     text-align: center;
     margin-top: 15px;
     margin-bottom: 0px;
+}
+
+.main__subcat{
+    display: flex;
+}
+
+.name__subcat
+{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.filters{
+    width: 20%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 2px rgba(109, 138, 201, 0.959);
+}
+
+.filter__name{
+    position: relative;
+    top: 5px;
+    left: 15px;
+    font-weight: bold; /*Жирный текст */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.filter__list{
+    display: block;
+    position: relative;
+    font-weight: normal;
+    left: 25px;
+    font-size: 14px;
+    padding-bottom: 5px;
+    flex-wrap: nowrap;
+}
+
+.filter__category{
+    border-bottom: 1px solid rgba(109, 138, 201, 0.562);
+}
+
+.filters__button{
+    text-align: center;
+}
+
+.filters__button button{
+    background-color: rgba(109, 138, 201, 0.959);
+    margin: 10px;
+    padding: 10px 45px;
+    border: 0px;
+    border-radius: 10px;
+    border-color: rgba(109, 138, 201, 0.959);
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase; /* Большие буквы */
+}
+
+.filters__button button:hover{
+    box-shadow: 0 0 40px rgba(109, 138, 201, 1);
+}
+
+
+.catalog__products{
+    width: 80%;
 }
 
 /* Portrait tablets and medium desktops */
