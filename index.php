@@ -15,7 +15,7 @@
         <div class="subcategory">
             <a class="subcategory__item" href="Subcategory.php">
                 <div class="item__picture"><img src="img/subcategory/Proc.jpg"></div>
-                <span class="item__text">1Процессоры</span>
+                <span class="item__text">Процессоры</span>
             </a>
 
             <a class="subcategory__item" href="#">

@@ -13,9 +13,9 @@
     <h2 class="name__subcat">Процессоры</h2>
     <div class="main__subcat">
         <div class="filters">
-            <div class="filter__category">
+        <div class="filter__category">
                 <div class="filter__name">
-                    <p>Бренды</p>
+                    <p>Производитель</p>
                 </div>
                     <div class="filter__list">
                         <div class="checkbox__list">
@@ -31,95 +31,63 @@
                             </label>
                         </div>
                     </div>
-            </div>
-
+            </div> 
             <div class="filter__category">
                 <div class="filter__name">
-                    <p>Бренды</p>
+                    <p>Цена</p>
                 </div>
                     <div class="filter__list">
                         <div class="checkbox__list">
                             <label>
                                 <input type="checkbox" id="checkbox">
-                                AMD
+                                До 10 000 ₽ 
                             </label>
                         </div>
                         <div class="checkbox__list">
                             <label>
                                 <input type="checkbox" id="checkbox">
-                                Intel
-                            </label>
-                        </div>
-                    </div>
-            </div>
-
-            <div class="filter__category">
-                <div class="filter__name">
-                    <p>Бренды</p>
-                </div>
-                    <div class="filter__list">
-                        <div class="checkbox__list">
-                            <label>
-                                <input type="checkbox" id="checkbox">
-                                AMD
+                                От 10 000 до 20 000 ₽
                             </label>
                         </div>
                         <div class="checkbox__list">
                             <label>
                                 <input type="checkbox" id="checkbox">
-                                Intel
+                                От 20 000 ₽
                             </label>
                         </div>
                     </div>
             </div>
             <div class="filter__category">
                 <div class="filter__name">
-                    <p>Бренды</p>
+                    <p>Сокет</p>
                 </div>
                     <div class="filter__list">
                         <div class="checkbox__list">
                             <label>
                                 <input type="checkbox" id="checkbox">
-                                AMD
+                                LGA 1151
                             </label>
                         </div>
                         <div class="checkbox__list">
                             <label>
                                 <input type="checkbox" id="checkbox">
-                                Intel
+                                AM4
                             </label>
                         </div>
                     </div>
             </div>
-            <div class="filter__category">
-                <div class="filter__name">
-                    <p>Бренды</p>
-                </div>
-                    <div class="filter__list">
-                        <div class="checkbox__list">
-                            <label>
-                                <input type="checkbox" id="checkbox">
-                                AMD
-                            </label>
-                        </div>
-                        <div class="checkbox__list">
-                            <label>
-                                <input type="checkbox" id="checkbox">
-                                Intel
-                            </label>
-                        </div>
-                    </div>
-            </div>
-            
                 <div class="filters__button">
                     <button type="button">Подтвердить</button>
+                </div>
+                <div class="filters__button__res">
+                    <button type="button">Сброс</button>
                 </div>
         </div>
 
 
 
             <div class="catalog__products">
-                Какой-то текст
+                ASS
             </div>
     </div>
 </div>

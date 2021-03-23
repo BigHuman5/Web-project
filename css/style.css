@@ -10,6 +10,9 @@ html, body{
 	font-size: 12px;
 	-webkit-font-smoothing: antialiased;
 }
+* {
+    outline: 0 !important;
+  }
 
 p{
     margin: 0;
@@ -40,6 +43,7 @@ header{
     width: 100%;
     padding: 0px;
     padding-bottom: 20px;
+    display: inline-block;
 }
 
 
@@ -48,6 +52,22 @@ header{
     z-index: 1000;
     padding-top: 5px;
     text-align: left;
+}
+
+.header__text{
+    text-align: right;
+    z-index: 1000;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.header__numder{
+    text-align: right;
+    z-index: 1000;
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
 }
 
 .subcategory__item{
@@ -142,20 +162,42 @@ footer{
     text-align: center;
 }
 
+.filters__button__res{
+    text-align: center;
+}
+
 .filters__button button{
     background-color: rgba(109, 138, 201, 0.959);
-    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
     padding: 10px 45px;
     border: 0px;
     border-radius: 10px;
-    border-color: rgba(109, 138, 201, 0.959);
     color: #fff;
     cursor: pointer;
     text-transform: uppercase; /* Большие буквы */
 }
 
 .filters__button button:hover{
-    box-shadow: 0 0 40px rgba(109, 138, 201, 1);
+    box-shadow: 0 0 20px rgb(113, 141, 201);
+    background-color: rgba(69, 107, 189, 0.959)
+}
+
+.filters__button__res button{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 10px 70px;
+    border: 1px solid black;
+    border-color: rgba(109, 138, 201, 0.959);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-transform: uppercase; /* Большие буквы */
+}
+
+.filters__button__res button:hover{
+    box-shadow: 0 0 20px rgb(113, 141, 201);
+    background-color: rgba(69, 107, 189, 0.959)
 }
 
 
