@@ -13,81 +13,13 @@
     <h2 class="name__subcat">Процессоры</h2>
     <div class="main__subcat">
         <div class="filters">
-        <div class="filter__category">
-                <div class="filter__name">
-                    <p>Производитель</p>
-                </div>
-                    <div class="filter__list">
-                        <div class="checkbox__list">
-                            <label>
-                                <input type="checkbox" id="checkbox">
-                                AMD
-                            </label>
-                        </div>
-                        <div class="checkbox__list">
-                            <label>
-                                <input type="checkbox" id="checkbox">
-                                Intel
-                            </label>
-                        </div>
-                    </div>
-            </div> 
-            <div class="filter__category">
-                <div class="filter__name">
-                    <p>Цена</p>
-                </div>
-                    <div class="filter__list">
-                        <div class="checkbox__list">
-                            <label>
-                                <input type="checkbox" id="checkbox">
-                                До 10 000 ₽ 
-                            </label>
-                        </div>
-                        <div class="checkbox__list">
-                            <label>
-                                <input type="checkbox" id="checkbox">
-                                От 10 000 до 20 000 ₽
-                            </label>
-                        </div>
-                        <div class="checkbox__list">
-                            <label>
-                                <input type="checkbox" id="checkbox">
-                                От 20 000 ₽
-                            </label>
-                        </div>
-                    </div>
-            </div>
-            <div class="filter__category">
-                <div class="filter__name">
-                    <p>Сокет</p>
-                </div>
-                    <div class="filter__list">
-                        <div class="checkbox__list">
-                            <label>
-                                <input type="checkbox" id="checkbox">
-                                LGA 1151
-                            </label>
-                        </div>
-                        <div class="checkbox__list">
-                            <label>
-                                <input type="checkbox" id="checkbox">
-                                AM4
-                            </label>
-                        </div>
-                    </div>
-            </div>
-                <div class="filters__button">
-                    <button type="button">Подтвердить</button>
-                </div>
-                <div class="filters__button__res">
-                    <button type="button">Сброс</button>
-                </div>
+        <?php        include 'php/filters.php';    ?>
         </div>
 
 
 
             <div class="catalog__products">
-                ASS
+            <?php        include 'php/product.php';    ?>
             </div>
     </div>
 </div>

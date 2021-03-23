@@ -14,6 +14,10 @@ html, body{
     outline: 0 !important;
   }
 
+a {
+    text-decoration: none;
+}
+
 p{
     margin: 0;
     padding: 0;
@@ -39,35 +43,44 @@ p{
 
 }
 
-header{
-    width: 100%;
-    padding: 0px;
-    padding-bottom: 20px;
-    display: inline-block;
+.header{
+	background-color: rgb(35, 170, 211);
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	height: 68px;
 }
 
-
-.header__IMG{
-    position: relative;
-    z-index: 1000;
-    padding-top: 5px;
-    text-align: left;
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0;
+	align-items: center;
 }
 
 .header__text{
-    text-align: right;
-    z-index: 1000;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    display: inline-block;
+	display: flex;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase; /* Большие буквы */
 }
 
-.header__numder{
-    text-align: right;
-    z-index: 1000;
-    position: relative;
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
+.header__number
+{
+	color: white;
+	text-decoration: none; /* Удаление подчёркивания в ссылки */
+	opacity: .75;
+	margin-left: 50px;
+	transition: opacity 0.1s linear; /* Плавный переход */
+}
+
+.main{
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    padding-top: 100px;
 }
 
 .subcategory__item{
@@ -120,16 +133,20 @@ footer{
 
 .main__subcat{
     display: flex;
+    padding-top: 20px;
 }
 
 .name__subcat
 {
-    font-size: 18px;
-    padding-bottom: 20px;
+    display: flex;
+    font-size: 20px;
+    padding-top: 80px;
+    margin-left: 35px;
 }
 
 .filters{
-    width: 20%;
+    min-width: 230px;
+    height: 100%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 2px rgba(109, 138, 201, 0.959);
@@ -202,8 +219,78 @@ footer{
 
 
 .catalog__products{
-    width: 80%;
+    width: 100%;
+    padding: 0px 15px;
 }
+
+.container__product a{
+    width: 100%;
+    display: grid;
+    background-color: white;
+    border: 1px solid rgba(49, 79, 145, 0.759);
+    border-radius: 10px;
+    padding: 15px 15px;
+    text-align: left;
+    margin: 10px 0;
+    opacity: 1;
+}
+
+.container__product:first-child a{
+    margin: 0 0;
+}
+
+.container__product:hover a{
+    box-shadow: 0 0 5px rgb(22, 75, 189);
+}
+
+.product__image{
+    grid-column: 1;
+    grid-row: 1/ span 2;
+    margin-right: 15px;
+}
+
+.product__image img{
+    width: 160px;
+    height: 176px;
+}
+
+.product__name{
+    grid-column: 2;
+    grid-row: 1;
+    max-height: 100px;
+    margin-bottom: 30px;
+}
+.product__name p{
+    text-decoration: none; /* Удаление подчёркивания в ссылки */
+    font-size: 20px;
+    font-weight: bold; /* Жирный текст */
+    color: #000;
+    transition: color 0.1s linear;
+}
+
+.container__product:hover .product__name p{
+    color: rgb(22, 75, 189);
+}
+
+.product__price{
+    grid-column: 3;
+    grid-row: 1;
+    font-size: 20px;
+    color: #000;
+    transition: color 0.1s linear;
+}
+
+.container__product:hover .product__price{
+    color: rgb(22, 75, 189);
+}
+
+.product__description{
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 17px;
+    color: #000;
+}
+
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
