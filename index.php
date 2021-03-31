@@ -13,7 +13,7 @@
 <div class="container">
     <div class="main">
         <div class="subcategory">
-            <a class="subcategory__item" href="Subcategory.php">
+            <a class="subcategory__item" href="Subcategory">
                 <div class="item__picture"><img src="img/subcategory/Proc.jpg"></div>
                 <span class="item__text">Процессоры</span>
             </a>

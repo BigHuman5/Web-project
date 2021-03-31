@@ -23,15 +23,6 @@ p{
     padding: 0;
 }
 
-.blue__strip{
-    width: 100%;
-    height: 68px;
-    padding: 0px;
-    background-color: rgb(35, 170, 211);
-    position: absolute;
-    z-index: 1;
-}
-
 .container{
     width: 100%;
     max-width: 1200px;
@@ -44,13 +35,31 @@ p{
 }
 
 .header{
-	background-color: rgb(35, 170, 211);
 	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
+	position: relative;
 	z-index: 1000;
-	height: 68px;
+}
+
+
+.header__admin__panel{
+    width: 100%;
+    background-color: #fff;
+    justify-content: flex-end;
+    display: flex;
+}
+/*СТРОЧКА ВВЕРХУ HEADER*/
+.admin__panel__text{
+    text-align: right;
+    margin-right: 10px;
+}
+
+.admin__panel__exit{
+    text-align: right;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.header__color{
+    background-color: rgb(35, 170, 211);
+    width: 100%;
 }
 
 .header__inner{
@@ -58,6 +67,7 @@ p{
 	justify-content: space-between;
 	padding: 5px 0;
 	align-items: center;
+    height: 68px;
 }
 
 .header__text{
@@ -80,7 +90,7 @@ p{
     display: flex;
 	flex-direction: column;
 	justify-content: center;
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 .subcategory__item{
@@ -140,10 +150,15 @@ footer{
 {
     display: flex;
     font-size: 20px;
-    padding-top: 80px;
     margin-left: 35px;
 }
 
+/*КОНЕЦ ОСНОВНОЙ СТРАНИЦЫ*/
+/*СТРАНИЦА С АВТОРИЗАЦИЕЙ*/
+.main__login{
+    text-align: center;
+}
+/*СТРАНИЦА С КАТАЛОГОМ*/
 .filters{
     min-width: 230px;
     height: 100%;
