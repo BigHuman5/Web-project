@@ -1,6 +1,12 @@
 <header class="header">
 <div class="container">
 	<?php
+	$requestUri = $_SERVER["REQUEST_URI"];
+	$requestMethod = $_SERVER["REQUEST_METHOD"];
+	$path = explode("/", $requestUri);
+	$CatURL = $path[1];
+	echo $path[1];
+	echo $path[2];
 	session_start();
 		if (isset($_SESSION['login'])) {
 			echo "<div class='header__admin__panel'> 
@@ -18,7 +24,7 @@
 		<div class="container">
 			<div class="header__inner">
 				<div class="header__logo">
-				<a href="/"><img src="img/nix_logo_2017.png" alt="IMG"></a>
+				<a href="/"><img src="http://localhost/img/nix_logo_2017.png" alt="IMG"></a>
 				</div>
 				<div class="header__text">
 					<div class="header__number" href="">✆ 8 950 554 3232</div>

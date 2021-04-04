@@ -1,152 +1,43 @@
-<div class="container__product">
-    <a href="">
-            <div class="product__image">
-                <img src="img\Products\Processors\0.jpg" alt="">
-            </div>
-            <div class="product__name">
-                <p>Процессор AMD Athlon X4 840 OEM</p>
-            </div>
-            <div class="product__price">
-                <p>150 000 ₽</p>
-            </div>
-            <div class="product__description">
-            Доступный процессор AMD Athlon X4 840 – модель с достойными техническими характеристиками, которая может стать основой мощного персонального компьютера. Он выполнен на архитектуре Steamroller и устанавливается в сокет FM2+. Основными элементами устройства являются кэш-память, повышающая скорость обработки команд, и четыре ядра Kaveri. Тактовая частота варьируется в зависимости от нагрузок и находитс...
-            </div>
-    </a>
-</div>
+<?php 
+            require('php/bd.php');
+            $query = "Select * from ".$CatName['Category_url'].";";
+            $result = mysqli_query($link,$query) or die(mysqli_error($link));
+            $i=0;
+            while ($res = mysqli_fetch_array($result))
+            {
+                $result_r['ID'][$i]=$res['ID'];
+                $result_r['Name'][$i]=$res['Name'];
+                $result_r['About'][$i]=$res['About'];
+                $result_r['Price'][$i]=$res['Price'];
+                $i++;
+            }
+?>
 
-<div class="container__product">
-    <a href="">
-            <div class="product__image">
-                <img src="img\Products\Processors\0.jpg" alt="">
-            </div>
-            <div class="product__name">
-                <p>Процессор AMD Athlon X4 840 OEM</p>
-            </div>
-            <div class="product__price">
-                <p>150 000 ₽</p>
-            </div>
-            <div class="product__description">
-            Доступный процессор AMD Athlon X4 840 – модель с достойными техническими характеристиками, которая может стать основой мощного персонального компьютера. Он выполнен на архитектуре Steamroller и устанавливается в сокет FM2+. Основными элементами устройства являются кэш-память, повышающая скорость обработки команд, и четыре ядра Kaveri. Тактовая частота варьируется в зависимости от нагрузок и находитс...
-            </div>
-    </a>
-</div>
 
-<div class="container__product">
-    <a href="">
-            <div class="product__image">
-                <img src="img\Products\Processors\0.jpg" alt="">
-            </div>
-            <div class="product__name">
-                <p>Процессор AMD Athlon X4 840 OEM</p>
-            </div>
-            <div class="product__price">
-                <p>150 000 ₽</p>
-            </div>
-            <div class="product__description">
-            Доступный процессор AMD Athlon X4 840 – модель с достойными техническими характеристиками, которая может стать основой мощного персонального компьютера. Он выполнен на архитектуре Steamroller и устанавливается в сокет FM2+. Основными элементами устройства являются кэш-память, повышающая скорость обработки команд, и четыре ядра Kaveri. Тактовая частота варьируется в зависимости от нагрузок и находитс...
-            </div>
-    </a>
-</div>
 
-<div class="container__product">
-    <a href="">
-            <div class="product__image">
-                <img src="img\Products\Processors\0.jpg" alt="">
-            </div>
-            <div class="product__name">
-                <p>Процессор AMD Athlon X4 840 OEM</p>
-            </div>
-            <div class="product__price">
-                <p>150 000 ₽</p>
-            </div>
-            <div class="product__description">
-            Доступный процессор AMD Athlon X4 840 – модель с достойными техническими характеристиками, которая может стать основой мощного персонального компьютера. Он выполнен на архитектуре Steamroller и устанавливается в сокет FM2+. Основными элементами устройства являются кэш-память, повышающая скорость обработки команд, и четыре ядра Kaveri. Тактовая частота варьируется в зависимости от нагрузок и находитс...
-            </div>
-    </a>
-</div>
-
-<div class="container__product">
-    <a href="">
-            <div class="product__image">
-                <img src="img\Products\Processors\0.jpg" alt="">
-            </div>
-            <div class="product__name">
-                <p>Процессор AMD Athlon X4 840 OEM</p>
-            </div>
-            <div class="product__price">
-                <p>150 000 ₽</p>
-            </div>
-            <div class="product__description">
-            Доступный процессор AMD Athlon X4 840 – модель с достойными техническими характеристиками, которая может стать основой мощного персонального компьютера. Он выполнен на архитектуре Steamroller и устанавливается в сокет FM2+. Основными элементами устройства являются кэш-память, повышающая скорость обработки команд, и четыре ядра Kaveri. Тактовая частота варьируется в зависимости от нагрузок и находитс...
-            </div>
-    </a>
-</div>
-
-<div class="container__product">
-    <a href="">
-            <div class="product__image">
-                <img src="img\Products\Processors\0.jpg" alt="">
-            </div>
-            <div class="product__name">
-                <p>Процессор AMD Athlon X4 840 OEM</p>
-            </div>
-            <div class="product__price">
-                <p>150 000 ₽</p>
-            </div>
-            <div class="product__description">
-            Доступный процессор AMD Athlon X4 840 – модель с достойными техническими характеристиками, которая может стать основой мощного персонального компьютера. Он выполнен на архитектуре Steamroller и устанавливается в сокет FM2+. Основными элементами устройства являются кэш-память, повышающая скорость обработки команд, и четыре ядра Kaveri. Тактовая частота варьируется в зависимости от нагрузок и находитс...
-            </div>
-    </a>
-</div>
-
-<div class="container__product">
-    <a href="">
-            <div class="product__image">
-                <img src="img\Products\Processors\0.jpg" alt="">
-            </div>
-            <div class="product__name">
-                <p>Процессор AMD Athlon X4 840 OEM</p>
-            </div>
-            <div class="product__price">
-                <p>150 000 ₽</p>
-            </div>
-            <div class="product__description">
-            Доступный процессор AMD Athlon X4 840 – модель с достойными техническими характеристиками, которая может стать основой мощного персонального компьютера. Он выполнен на архитектуре Steamroller и устанавливается в сокет FM2+. Основными элементами устройства являются кэш-память, повышающая скорость обработки команд, и четыре ядра Kaveri. Тактовая частота варьируется в зависимости от нагрузок и находитс...
-            </div>
-    </a>
-</div>
-
-<div class="container__product">
-    <a href="">
-            <div class="product__image">
-                <img src="img\Products\Processors\0.jpg" alt="">
-            </div>
-            <div class="product__name">
-                <p>Процессор AMD Athlon X4 840 OEM</p>
-            </div>
-            <div class="product__price">
-                <p>150 000 ₽</p>
-            </div>
-            <div class="product__description">
-            Доступный процессор AMD Athlon X4 840 – модель с достойными техническими характеристиками, которая может стать основой мощного персонального компьютера. Он выполнен на архитектуре Steamroller и устанавливается в сокет FM2+. Основными элементами устройства являются кэш-память, повышающая скорость обработки команд, и четыре ядра Kaveri. Тактовая частота варьируется в зависимости от нагрузок и находитс...
-            </div>
-    </a>
-</div>
-
-<div class="container__product">
-    <a href="">
-            <div class="product__image">
-                <img src="img\Products\Processors\0.jpg" alt="">
-            </div>
-            <div class="product__name">
-                <p>Процессор AMD Athlon X4 840 OEM</p>
-            </div>
-            <div class="product__price">
-                <p>150 000 ₽</p>
-            </div>
-            <div class="product__description">
-            Доступный процессор AMD Athlon X4 840 – модель с достойными техническими характеристиками, которая может стать основой мощного персонального компьютера. Он выполнен на архитектуре Steamroller и устанавливается в сокет FM2+. Основными элементами устройства являются кэш-память, повышающая скорость обработки команд, и четыре ядра Kaveri. Тактовая частота варьируется в зависимости от нагрузок и находитс...
-            </div>
-    </a>
-</div>
+<?php
+if($i>0){
+    for($p=0;$p<=$i-1;$p++)
+        {
+            echo '<div class="container__product">
+                <a href="'.$CatName['Category_url'].'/'.$result_r['ID'][$p].'">
+                        <div class="product__image">
+                            <img src="http://localhost/img/Products/Processors/'.$result_r['ID'][$p].'.jpg" alt="">
+                        </div>
+                        <div class="product__name">
+                            <p>'.$result_r['Name'][$p].'</p>
+                        </div>
+                        <div class="product__price">
+                            <p>'.$result_r['Price'][$p].' ₽</p>
+                        </div>
+                        <div class="product__description">
+                        '.substr($result_r['About'][$p], 0,400).'...
+                        </div>
+                </a>
+            </div>';
+        }
+}
+else{
+    echo '<div class="product__error"><h4>Упс... Ничего не найдено!</h4></div>';
+}
+?>
