@@ -22,7 +22,7 @@ if($i>0){
             echo '<div class="container__product">
                 <a href="'.$CatName['Category_url'].'/'.$result_r['ID'][$p].'">
                         <div class="product__image">
-                            <img src="http://localhost/img/Products/Processors/'.$result_r['ID'][$p].'.jpg" alt="">
+                            <img src="http://localhost/img/Products/'.$path[2].'/'.$result_r['ID'][$p].'.jpg" alt="">
                         </div>
                         <div class="product__name">
                             <p>'.$result_r['Name'][$p].'</p>

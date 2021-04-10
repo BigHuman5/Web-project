@@ -15,6 +15,10 @@ if ($CatURL == "login") {
 }
 if($CatURL == "Subcategory")
 {
-include "php/categories-controller.php";
+include "php/logic/products-controller.php";
+}
+if($CatURL == "Categories")
+{
+include "php/logic/categories-controller.php";
 }
 ?>

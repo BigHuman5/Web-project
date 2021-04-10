@@ -1,5 +1,7 @@
-<footer>
+<?php
+echo '<footer>
     <div class="footer__text">
-        Copyright © 2021. All Rights Reserved
+        Copyright © '.date("Y").' All Rights Reserved
     </div>
-</footer>
+</footer>';
+?>

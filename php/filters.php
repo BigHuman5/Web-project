@@ -2,11 +2,6 @@
 $requestUri = $_SERVER["REQUEST_URI"];
 $path = explode("/", $requestUri);
 $CatURL = $path[2];
-if(strripos($CatURL,"?") == true)
-{
-    echo '2';
-}
-else echo '1';
     //require('php/filters-logic.php');
     require('php/bd.php');
     $query_1fil = "Select filter_1,COUNT(filter_1) from ".$CatName['Category_url']." GROUP By filter_1;";
@@ -32,9 +27,9 @@ else echo '1';
 
 <?php
 echo '<form action="/Subcategory/'.$CatName['Category_url'].'" method="get">';
-            for($d=1;$d<=$i;$d++)
+            for($d=1;$d<=2;$d++)
             {
-                if($filter_r['filter_'.$d.''] != null){
+                if(isset($filter_r['filter_'.$d.''])){
                 echo' <div class="filter__category">
                     <div class="filter__name">
                         <p>

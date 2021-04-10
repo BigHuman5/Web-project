@@ -5,17 +5,23 @@
 	$requestMethod = $_SERVER["REQUEST_METHOD"];
 	$path = explode("/", $requestUri);
 	$CatURL = $path[1];
-	echo $path[1];
-	echo $path[2];
 	session_start();
-		if (isset($_SESSION['login'])) {
-			echo "<div class='header__admin__panel'> 
-				<div class='admin__panel__text'>
-					Вы авторизовались как администратор	
-				</div>
-				<div class='admin__panel__exit'>
-					<a href='http://localhost/php/logout.php'>[Выход]</a>
-				</div>		
+		if (isset($_SESSION['admin'])) {
+			echo "
+			<div class='header__admin__panel'>";
+					if($requestUri=='/') 	echo"
+					<div class='admin__panel__func'>
+					<a href='Categories'>Управление категориями</a>
+					</div>";
+					else {};
+					echo "<div class='admin__panel__right'> 
+						<div class='admin__panel__text'>
+							Вы авторизовались как администратор	
+						</div>
+						<div class='admin__panel__exit'>
+							<a href='http://localhost/php/logout.php'>[Выход]</a>
+						</div>
+					</div>		
 			</div>";
 		}
 	?>

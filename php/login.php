@@ -9,7 +9,7 @@ $count = mysqli_num_rows($result);
 
 if($count == 1)
 {
-    $_SESSION['login'] = $login;
+    $_SESSION['admin'] = $login;
     header('Location: http://localhost');
     exit;
 }
